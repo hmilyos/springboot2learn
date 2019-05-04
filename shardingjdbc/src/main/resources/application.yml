@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  devtools:
+    remote:
+      restart:
+        enabled: false
+  datasource:
+    test1:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://120.79.151.179:3306/db0
+      username: root
+      password: admin
+    test2:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://120.79.151.179:3306/db1
+          username: root
+          password: admin
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
