@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="basic" />
         <module name="shardingjdbc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="basic" target="1.8" />
       <module name="shardingjdbc" target="1.8" />
       <module name="springboot2learn" target="1.8" />
     </bytecodeTargetLevel>

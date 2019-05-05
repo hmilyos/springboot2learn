@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/shardingjdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/basic/pom.xml" />
       </list>
     </option>
   </component>
