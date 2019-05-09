@@ -13,8 +13,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class LiJjianActivityStrategy implements IActivityStrategy {
     @Override
-    public String getActivityType() {
-        return "LIJIAN";
+    public Integer getActivityType() {
+        return 1;
     }
 
     @Override
