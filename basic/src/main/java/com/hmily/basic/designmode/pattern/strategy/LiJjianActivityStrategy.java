@@ -1,4 +1,4 @@
-package com.hmily.basic.designmode.strategy;
+package com.hmily.basic.designmode.pattern.strategy;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

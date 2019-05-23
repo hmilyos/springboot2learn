@@ -1,4 +1,4 @@
-package com.hmily.basic.designmode.strategy;
+package com.hmily.basic.designmode.pattern.strategy;
 
 /**
  * @ClassName PromotionActivity

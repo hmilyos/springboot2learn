@@ -1,4 +1,4 @@
-package com.hmily.basic.designmode.strategy;
+package com.hmily.basic.designmode.pattern.strategy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
