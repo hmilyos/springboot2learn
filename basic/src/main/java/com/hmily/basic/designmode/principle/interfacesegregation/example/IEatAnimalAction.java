@@ -1,0 +1,6 @@
+package com.hmily.basic.designmode.principle.interfacesegregation.example;
+
+
+public interface IEatAnimalAction {
+    void eat();
+}
