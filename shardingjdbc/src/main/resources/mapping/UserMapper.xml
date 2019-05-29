@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hmily.sharddemo.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.hmily.sharddemo.domain.UserEntity">
+        <!--
+        @mbg.generated
+        -->
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="age" jdbcType="INTEGER" property="age" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--
+        @mbg.generated
+        -->
+        delete from user
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.hmily.sharddemo.domain.UserEntity">
+        <!--
+        @mbg.generated
+        -->
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into user (age, `name`)
+        values (#{age,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="com.hmily.sharddemo.domain.UserEntity">
+        <!--
+        @mbg.generated
+        -->
+        update user
+        set age = #{age,jdbcType=INTEGER},
+        `name` = #{name,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--
+        @mbg.generated
+        -->
+        select id, age, `name`
+        from user
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        <!--
+        @mbg.generated
+        -->
+        select id, age, `name`
+        from user
+    </select>
+</mapper>
