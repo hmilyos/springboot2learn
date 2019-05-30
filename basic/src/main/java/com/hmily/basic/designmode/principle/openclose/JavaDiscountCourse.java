@@ -26,8 +26,13 @@ public class JavaDiscountCourse extends JavaCourse {
         return super.getPrice();
     }
 
-    @Override
-    public BigDecimal getPrice(){
+    // 这里违反了 里式替换原则
+//    @Override
+//    public BigDecimal getPrice(){
+//        return super.getPrice().multiply(new BigDecimal(ratio)).
+//                divide(new BigDecimal("100"), 2, BigDecimal.ROUND_HALF_UP);
+//    }
+    public BigDecimal getDiscountPrice(){
         return super.getPrice().multiply(new BigDecimal(ratio)).
                 divide(new BigDecimal("100"), 2, BigDecimal.ROUND_HALF_UP);
     }
