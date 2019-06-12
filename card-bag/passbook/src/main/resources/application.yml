@@ -2,23 +2,24 @@ spring:
   application:
     name: HmilyPassbook
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/passbook?autoReconnect=true
+    url: jdbc:mysql://120.79.151.179:3306/passbook?autoReconnect=true
     username: root
-    password:
-  kafka:
-    bootstrap-servers: 127.0.0.1:9092
-    consumer:
-      group-id: passbook
-    listener:
-      concurrency: 4
+    password: admin
+#  kafka:
+#    bootstrap-servers: 127.0.0.1:9092
+#    consumer:
+#      group-id: passbook
+#    listener:
+#      concurrency: 4
   data:
-    hbase:
-      quorum: 127.0.0.1:2181
-      rootDir: file:///Users/zhanghu05/QinyiZhang/Soft/hbase_data/root_dir
-      nodeParent: /hbase
+#    hbase:
+#      quorum: 127.0.0.1:2181
+#      rootDir: file:///Users/zhanghu05/QinyiZhang/Soft/hbase_data/root_dir
+#      nodeParent: /hbase
   redis:
-    host: 127.0.0.1
+    host: 120.79.151.179
     port: 6379
+    password: hmily
 
 server:
   port: 9528
