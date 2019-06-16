@@ -5,12 +5,12 @@ spring:
     url: jdbc:mysql://120.79.151.179:3306/passbook?autoReconnect=true
     username: root
     password: admin
-#  kafka:
-#    bootstrap-servers: 127.0.0.1:9092
-#    consumer:
-#      group-id: passbook
-#    listener:
-#      concurrency: 4
+  kafka:
+    bootstrap-servers: 120.79.151.179:9092
+    consumer:
+      group-id: passbook
+    listener:
+      concurrency: 4
   data:
 #    hbase:
 #      quorum: 127.0.0.1:2181
